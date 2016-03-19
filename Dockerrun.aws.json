@@ -1,5 +1,5 @@
 {
-  "AWSEBDockerrunVersion": 1,
+  "AWSEBDockerrunVersion": 2,
   "volumes": [
     {
       "name": "nginx-config",
@@ -11,7 +11,7 @@
   "containerDefinitions": [
     {
       "name": "nginx",
-      "image": "nginx",
+      "image": "nginx:latest",
       "essential": true,
       "memory": 256,
       "portMappings": [
