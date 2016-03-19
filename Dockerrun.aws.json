@@ -11,7 +11,7 @@
   "containerDefinitions": [
     {
       "name": "nginx",
-      "image": "nginx/stable",
+      "image": "nginx:stable",
       "essential": true,
       "memory": 128,
       "portMappings": [
