@@ -23,14 +23,14 @@
           "hostPort": 443,
           "containerPort": 443
         }
-      ],
-            "mountPoints": [
+       ],
+       "mountPoints": [
         {
           "sourceVolume": "nginx-conf",
           "containerPath": "/etc/nginx",
           "readOnly": true
         }
-      ]
+       ]
     }
   ]
 }
