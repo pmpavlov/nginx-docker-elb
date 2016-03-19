@@ -1,34 +1,19 @@
 {
   "AWSEBDockerrunVersion": 2,
-  "volumes": [
-    {
-      "name": "nginx-config",
-      "host": {
-        "sourcePath": "/var/app/current/nginx/"
-      }
-    }
-  ],
   "containerDefinitions": [
     {
       "name": "nginx",
       "image": "ppavlov/nginx-docker",
       "essential": true,
-      "memory": 256,
+      "memory": 128,
       "portMappings": [
         {
-          "hostPort": 8080,
-          "containerPort": 8080
+          "hostPort": 80,
+          "containerPort": 80
         },
         {
           "hostPort": 443,
           "containerPort": 443
-        }
-      ],
-      "mountPoints": [
-        {
-          "sourceVolume": "nginx-config",
-          "containerPath": "/etc/nginx",
-          "readOnly": true
         }
       ]
     }
