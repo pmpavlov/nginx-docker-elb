@@ -11,7 +11,7 @@
   "containerDefinitions": [
     {
       "name": "nginx",
-      "image": "nginx:latest",
+      "image": "ppavlov/nginx-docker",
       "essential": true,
       "memory": 256,
       "portMappings": [
