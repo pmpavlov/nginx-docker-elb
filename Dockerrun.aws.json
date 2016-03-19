@@ -1,3 +1,4 @@
+{
   "AWSEBDockerrunVersion": 1,
   "volumes": [
     {
@@ -16,7 +17,7 @@
       "portMappings": [
         {
           "hostPort": 80,
-          "containerPort": 80
+          "containerPort": 8080
         },
         {
           "hostPort": 443,
