@@ -1,9 +1,9 @@
   "AWSEBDockerrunVersion": 1,
   "volumes": [
     {
-      "name": "storage",
+      "name": "nginx-config",
       "host": {
-        "sourcePath": "/media/storage"
+        "sourcePath": "/var/app/current/nginx/"
       }
     }
   ],
@@ -25,8 +25,8 @@
       ],
       "mountPoints": [
         {
-          "sourceVolume": "storage",
-          "containerPath": "/mnt/storage",
+          "sourceVolume": "nginx-config",
+          "containerPath": "/etc/nginx",
           "readOnly": true
         }
       ]
