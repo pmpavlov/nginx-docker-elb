@@ -42,7 +42,7 @@
       "name": "jenkins",
       "image": "jenkins",
       "essential": true,
-      "memory": 256,
+      "memory": 364,
       "portMappings": [
         {
           "hostPort": 8080,
