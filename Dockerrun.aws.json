@@ -10,7 +10,7 @@
     {
       "name": "jenkins-home",
       "host": {
-        "sourcePath": "/var/app/current/jenkins-home"
+        "sourcePath": "/media/ebs_volume"
       }
     }  
   ],
