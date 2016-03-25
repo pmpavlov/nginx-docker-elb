@@ -52,13 +52,13 @@
           "hostPort": 50000,
           "containerPort": 50000
         }
-      ],
-      "mountPoints": [
+       ],
+       "mountPoints": [
         {
           "sourceVolume": "jenkins-home",
           "containerPath": "/var/jenkins_home"
         }
-      ]
+       ]
     }
   ]
 }
