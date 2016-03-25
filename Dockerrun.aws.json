@@ -6,6 +6,12 @@
       "host": {
         "sourcePath": "/var/app/current/nginx"
       }
+    },
+    {
+      "name": "jenkins-home",
+      "host": {
+        "sourcePath": "/var/app/current/jenkins-home"
+      }
     }  
   ],
   "containerDefinitions": [
@@ -31,6 +37,28 @@
           "readOnly": true
         }
        ]
+    },
+    {
+      "name": "jenkins",
+      "image": "jenkins",
+      "essential": true,
+      "memory": 256,
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "containerPort": 8080
+        },
+        {
+          "hostPort": 50000,
+          "containerPort": 50000
+        }
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "jenkins-home",
+          "containerPath": "/var/jenkins_home"
+        }
+      ]
     }
   ]
 }
